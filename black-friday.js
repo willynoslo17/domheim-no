@@ -12,6 +12,8 @@ function render(){var n=q?now:Date.now();if(n>=start||live){txt.innerHTML="<b>BL
 else{txt.innerHTML="<b>BLACK FRIDAY</b> starter om <span aria-live='off'>"+fmt(start-n)+"</span> · <a href='/black-friday' style='color:#fff'>Se kampanjevarene</a>";}}
 render();if(!live&&!q)setInterval(render,1000);
 document.body.insertBefore(bar,document.body.firstChild);
+var FP={"bordduk-i-bomull-og-lin-93dbdafd": [579, 463], "handflettet-kurv-i-bambus-13949059": [549, 439], "stablebare-skuffer-i-akryl-19377147": [509, 407], "dekorativt-glass-med-lokk-for-godteri-15504303": [499, 399], "sekskantede-speilfliser-i-akryl-for-vegg-02d33abb": [489, 391], "dekorative-bokstotter-i-nordisk-stil-15709678": [479, 383], "bordduk-med-geometrisk-monster-46ab76f6": [449, 359], "krydderglass-med-lokk-16076619": [439, 351], "putetrekk-med-kontrastfarger-58898707": [439, 351], "veggvase-i-japansk-stil-17278769": [439, 351], "baderomshylle-i-retrostil-36f505d2": [429, 343]};/*fp*/
+(function(){var m=location.pathname.match(/^\/p\/([^\/?#]+)/);if(!m||!live)return;var f=FP[m[1]];var pe=document.querySelector('.pp-price');if(!f||!pe)return;pe.innerHTML="<span style='color:#b91c1c'>"+f[1]+" kr</span> <small style='font-size:14px;font-weight:400;color:#555'>med koden "+B.code+" · Førpris (laveste pris siste 30 dager): <s>"+f[0]+" kr</s></small>";})();
 if(/\/black-friday/.test(location.pathname))return;
 var KEY="bf2026_popup_closed";try{if(localStorage.getItem(KEY))return;}catch(e){}
 setTimeout(function(){
