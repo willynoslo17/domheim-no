@@ -276,7 +276,7 @@ function toProduct(item: any, index: number, sector: string) {
     supplierPriceMaxUsd: costMax,
     suggestedRetailUsd: retail,
     base: retail,
-    brand: "CJ Dropshipping",
+    brand: "Domheim",
     supplier: "CJ Dropshipping",
     provider: "cj",
     listedNum: Number(item.listedNum) || 0,
@@ -405,7 +405,7 @@ function curatedPayload(
     sector,
     query,
     page,
-    markets: ["NO", "EU", "PE"],
+    markets: ["NO"],
     storefrontCap: STOREFRONT_CAP,
     count: pageProducts.length,
     scanned,
@@ -448,7 +448,7 @@ async function viaFallback(query: string, page: number, headers: Record<string, 
       sector: PROFILE.sector,
       query,
       page,
-      markets: ["NO", "EU", "PE"],
+      markets: ["NO"],
       source: result.source || "cj-live-curated-fallback",
     },
     { headers }
@@ -515,7 +515,7 @@ export async function onRequestGet(context: any) {
     const rows = page === 1 ? await winnerRows(winnerDeps(context, url.origin), "grid") : [];
     const products = await withQuotes(context.env, "cj", rows, cjIds);
     return Response.json(
-      { ok: true, supplier: "cj", sector: PROFILE.sector, query, page, markets: ["NO", "EU", "PE"], count: products.length, source: "cj-winners", products },
+      { ok: true, supplier: "cj", sector: PROFILE.sector, query, page, markets: ["NO"], count: products.length, source: "cj-winners", products },
       { headers }
     );
   }
