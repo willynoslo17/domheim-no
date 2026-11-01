@@ -1,7 +1,7 @@
 /** Norway market price matching (2026-10-30). Keys are CJ product ids (pid).
  * PRICE_OVERRIDE: regular NOK price aligned to the Norwegian market, never below the profit floor.
  * HIDDEN: profit floor is above the Norwegian market price -> product is hidden (not deleted). */
-export const PRICE_OVERRIDE: Record<string, number> = {"735C1BA4-DBD4-4B90-92F7-AA37048DD772": 369, "1646400792989011968": 349, "2607131033591625600": 259, "1423108454645633024": 1419, "2507101438491629200": 179, "1420973530220204032": 219};
+export const PRICE_OVERRIDE: Record<string, number> = {"735C1BA4-DBD4-4B90-92F7-AA37048DD772": 369, "1646400792989011968": 349, "2607131033591625600": 269, "1423108454645633024": 1419, "2507101438491629200": 189, "1420973530220204032": 229};
 /* 2026-10-30: products without required certification removed from store (owner order). */
 /* 2026-10-31 (sincert): owner order - only products with a confirmed certificate may be shown. */
 /* 2026-11-01: mushroom lamp 1423108454645633024 hidden by owner (price far above market); data/PDF kept for restore. */
@@ -13,10 +13,13 @@ export const CERT_ONLY = true;
 export const CERTIFIED = new Set<string>(["2607131033591625600", "2507101438491629200", "1420973530220204032", "pfy-home-tote", "pfy-home-poster-art", "pfy-home-poster-type", "pfy-home-journal", "pfy-home-sticker", "pfy-home-crew-sand-s", "pfy-home-crew-sand-m", "pfy-home-crew-sand-l", "pfy-home-crew-sand-xl", "pfy-home-tee-natural-s", "pfy-home-tee-natural-m", "pfy-home-tee-natural-l", "pfy-home-tee-natural-xl"]);
 
 /* 2026-11-01 owner rule: price under the cheapest comparable Norwegian product (total incl. 79 kr shipping), always with profit. Per CJ variant (vid). */
-export const VARIANT_PRICE: Record<string, number> = {"2607131033591626200": 259, "2607131033591626700": 259, "1423108455966838784": 1419, "1423108456004587520": 1419, "1423108456042336256": 1419, "1423108456075890688": 1419, "1423108456113639424": 1419, "1423108456151388160": 1419, "1423108456205914112": 1419, "1423108456252051456": 1419, "1423108456310771712": 1419, "2507101438491629400": 179, "2507101438491629600": 179, "1420973531604324352": 219, "1420973531616907264": 219, "1420973531625295872": 219};
+export const VARIANT_PRICE: Record<string, number> = {"2607131033591626200": 269, "2607131033591626700": 269, "1423108455966838784": 1419, "1423108456004587520": 1419, "1423108456042336256": 1419, "1423108456075890688": 1419, "1423108456113639424": 1419, "1423108456151388160": 1419, "1423108456205914112": 1419, "1423108456252051456": 1419, "1423108456310771712": 1419, "2507101438491629400": 189, "2507101438491629600": 189, "1420973531604324352": 229, "1420973531616907264": 229, "1420973531625295872": 229};
 
 /* 2026-11-01: CJ variants NOT sold because the certificate does not cover that model / plug type (US/UK/AU) / unknown set content. */
 export const EXCLUDED_VIDS = new Set<string>(["1423108455941672960", "1423108455975227392", "1423108455987810304", "1423108455996198912", "1423108456012976128", "1423108456021364736", "1423108456033947648", "1423108456046530560", "1423108456059113472", "1423108456067502080", "1423108456084279296", "1423108456092667904", "1423108456101056512", "1423108456122028032", "1423108456130416640", "1423108456142999552", "1423108456163971072", "1423108456176553984", "1423108456197525504", "1423108456218497024", "1423108456231079936", "1423108456239468544", "1423108456264634368", "1423108456277217280", "1423108456289800192", "1423108456327548928", "1423108456335937536"]);
 
 /* 2026-11-01: variant used when a checkout line has no vid (must be a certified, sellable variant). */
 export const DEFAULT_VID: Record<string, string> = {"2607131033591625600": "2607131033591626200", "1423108454645633024": "1423108455966838784", "2507101438491629200": "2507101438491629400", "1420973530220204032": "1420973531604324352"};
+
+/* Printify (01.11): fast pris = vanlig norsk markedspris for tilsvarende POD-vare; hver pris gir fortjeneste også ved fri frakt (pris*0.77 > (kost+frakt)*10.8). */
+export const PRINTIFY_PRICE: Record<string, number> = {"pfy-home-tote": 299, "pfy-home-poster-art": 229, "pfy-home-poster-type": 229, "pfy-home-journal": 259, "pfy-home-sticker": 149, "pfy-home-crew-sand-s": 549, "pfy-home-crew-sand-m": 549, "pfy-home-crew-sand-l": 549, "pfy-home-crew-sand-xl": 549, "pfy-home-tee-natural-s": 299, "pfy-home-tee-natural-m": 299, "pfy-home-tee-natural-l": 299, "pfy-home-tee-natural-xl": 299};
