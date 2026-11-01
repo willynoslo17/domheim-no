@@ -261,7 +261,7 @@
   /* Storefront rule (owner, 2026-10-02): every product that has an image is shown. */
   /* 2026-10-31 (sincert): only products with a confirmed certificate are shown. Restore with restaurar_por_sku.py. */
   const NORDIC_CERT_ONLY = true;
-  const NORDIC_CERTIFIED = new Set(["2607131033591625600", "CJYD298241402BY", "2507101438491629200", "CJYD242716902BY"]);
+  const NORDIC_CERTIFIED = new Set(["2607131033591625600", "CJYD298241402BY", "2507101438491629200", "CJYD242716902BY", "1420973530220204032", "CJJT123283701AZ"]);
   function certified(item) { return !NORDIC_CERT_ONLY || [item.externalId, item.cjPid, item.id, item.sku].some(v => v != null && NORDIC_CERTIFIED.has(String(v))); }
   function storefrontItem() {
     return item => Boolean(item && item.image && certified(item));

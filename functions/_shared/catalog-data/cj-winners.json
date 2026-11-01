@@ -39,6 +39,7 @@
     "bookends"
   ],
   "pids": [
+    "1420973530220204032",
     "2507101438491629200",
     "1423108454645633024",
     "2607131033591625600",
@@ -653,6 +654,18 @@
       "supplierPriceMaxUsd": 9.62,
       "keyword": "",
       "description": "Kraftig håndholdt vifte med børsteløs motor, over 6 hastigheter og lav støy (under 36 dB). Oppladbart litiumbatteri, 5 V USB-lading. Modell DQ266. CE (EMC, EN IEC 55014-1/-2) og RoHS dokumentert for DQ266/DQ269.",
+      "certified": "2026-11-01"
+    },
+    {
+      "id": "1420973530220204032",
+      "sku": "CJJT123283701AZ",
+      "name": "USB flaskevarmer – varmepose for tåteflaske (FY-H01)",
+      "nameEn": "Milk Bottle Warmer Nursing Bottle Insulation Cover Universal Heating Sleeve USB Charging Constant Temperature Baby Bottle Heater",
+      "category": "Hjem",
+      "image": "https://cf.cjdropshipping.com/b01d3935-5b6e-4272-954f-52986bfcea9a.jpg",
+      "supplierPriceMaxUsd": 11.85,
+      "keyword": "",
+      "description": "Varmepose for tåteflaske som holder melk og vann jevnt varm hjemme, i bilen eller på tur. Drives via USB (powerbank, bil-USB eller PC), kabel følger med. Borrelåsfeste passer de fleste flasker. CE: EMC etter EN 55014 og RoHS – modell FY-H01.",
       "certified": "2026-11-01"
     }
   ]
