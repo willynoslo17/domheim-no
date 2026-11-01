@@ -12,7 +12,7 @@ export const HIDDEN = new Set<string>(["1861322848657625088", "14263923773455769
 export const CERT_ONLY = true;
 export const CERTIFIED = new Set<string>(["2607131033591625600", "2507101438491629200", "1420973530220204032", "pfy-home-tote", "pfy-home-poster-art", "pfy-home-poster-type", "pfy-home-journal", "pfy-home-sticker", "pfy-home-crew-sand-s", "pfy-home-crew-sand-m", "pfy-home-crew-sand-l", "pfy-home-crew-sand-xl", "pfy-home-tee-natural-s", "pfy-home-tee-natural-m", "pfy-home-tee-natural-l", "pfy-home-tee-natural-xl"]);
 
-/* 2026-11-01 owner rule: price under the cheapest comparable Norwegian product (total incl. 79 kr shipping), always with profit. Per CJ variant (vid). */
+/* 2026-11-01 16:13 owner rule (replaces "under market"): price = SAME total as the most comparable Norwegian product (incl. shipping), always with profit; discounts only when owner says. Per CJ variant (vid). */
 export const VARIANT_PRICE: Record<string, number> = {"2607131033591626200": 269, "2607131033591626700": 269, "1423108455966838784": 1419, "1423108456004587520": 1419, "1423108456042336256": 1419, "1423108456075890688": 1419, "1423108456113639424": 1419, "1423108456151388160": 1419, "1423108456205914112": 1419, "1423108456252051456": 1419, "1423108456310771712": 1419, "2507101438491629400": 189, "2507101438491629600": 189, "1420973531604324352": 229, "1420973531616907264": 229, "1420973531625295872": 229};
 
 /* 2026-11-01: CJ variants NOT sold because the certificate does not cover that model / plug type (US/UK/AU) / unknown set content. */
