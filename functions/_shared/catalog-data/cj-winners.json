@@ -39,6 +39,7 @@
     "bookends"
   ],
   "pids": [
+    "2507101438491629200",
     "1423108454645633024",
     "2607131033591625600",
     "4A0F00E0-4DF9-4101-BB64-D61168FBBBB0",
@@ -640,6 +641,18 @@
       "supplierPriceMaxUsd": 27.53,
       "keyword": "",
       "description": "Retro sopplampe i metall for soverom og stue. Lavspent USB-lampe (≤36 V) med varmt, hvitt eller trefarget lys. Leveres med EU-adapter. CE (EMC, EN IEC 55015/61547) og RoHS dokumentert for USB-lampe BD-TD01–06.",
+      "certified": "2026-11-01"
+    },
+    {
+      "id": "2507101438491629200",
+      "sku": "CJYD242716902BY",
+      "name": "Håndholdt turbovifte, oppladbar (USB, børsteløs motor)",
+      "nameEn": "Usb Large Wind Ice Cooling Handheld Fan",
+      "category": "Hjem og interiør",
+      "image": "https://oss-cf.cjdropshipping.com/product/2025/07/10/14/6cab0a4f-f52c-4be8-bbfe-4abfafac662d_trans.jpeg",
+      "supplierPriceMaxUsd": 9.62,
+      "keyword": "",
+      "description": "Kraftig håndholdt vifte med børsteløs motor, over 6 hastigheter og lav støy (under 36 dB). Oppladbart litiumbatteri, 5 V USB-lading. Modell DQ266. CE (EMC, EN IEC 55014-1/-2) og RoHS dokumentert for DQ266/DQ269.",
       "certified": "2026-11-01"
     }
   ]
