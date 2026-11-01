@@ -39,6 +39,8 @@
     "bookends"
   ],
   "pids": [
+    "1423108454645633024",
+    "2607131033591625600",
     "4A0F00E0-4DF9-4101-BB64-D61168FBBBB0",
     "1383992671969873920",
     "5DB6B4E3-8878-4D23-83B9-C67CECF1FED6",
@@ -615,6 +617,30 @@
       "image": "https://cf.cjdropshipping.com/1623653640295.jpg",
       "supplierPriceMaxUsd": 5.1482,
       "keyword": "fabric storage bin"
+    },
+    {
+      "id": "2607131033591625600",
+      "sku": "CJYD298241402BY",
+      "name": "Oppladbar mini vakuumpakker (USB)",
+      "nameEn": "Vacuum Sealer USB-powered Portable Home Vacuum Machine Food Storage Bags",
+      "category": "Hjem og interiør",
+      "image": "https://oss-cf.cjdropshipping.com/product/2026/07/13/10/af2bda98-b80a-4dec-8701-a66119d49ff4_trans.jpeg",
+      "supplierPriceMaxUsd": 2.63,
+      "keyword": "",
+      "description": "Kompakt, oppladbar vakuumpakker for matoppbevaringsposer. 2000 mAh batteri, lades med USB på ca. 3 timer. Modell 5201. CE (EMC 2014/30/EU) og RoHS (2011/65/EU) dokumentert for samme modell.",
+      "certified": "2026-11-01"
+    },
+    {
+      "id": "1423108454645633024",
+      "sku": "CJSN124001302BY",
+      "name": "Sopplampe i metall – retro bordlampe (USB, lavspenning)",
+      "nameEn": "Table Lamp Retro Metal Bedroom Bedside Lamp Mushroom Lamp",
+      "category": "Hjem og interiør",
+      "image": "https://cf.cjdropshipping.com/dd52f6e1-541a-42de-811a-3af4ea08cdbb.jpg",
+      "supplierPriceMaxUsd": 27.53,
+      "keyword": "",
+      "description": "Retro sopplampe i metall for soverom og stue. Lavspent USB-lampe (≤36 V) med varmt, hvitt eller trefarget lys. Leveres med EU-adapter. CE (EMC, EN IEC 55015/61547) og RoHS dokumentert for USB-lampe BD-TD01–06.",
+      "certified": "2026-11-01"
     }
   ]
 }
