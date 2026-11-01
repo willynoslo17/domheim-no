@@ -10,7 +10,7 @@ export const HIDDEN = new Set<string>(["1861322848657625088", "14263923773455769
 /* 2026-10-31 (sincert): CERT_ONLY = true -> ONLY ids listed in CERTIFIED are shown/sellable (all providers: CJ, Printify, Printful, Gelato).
  * Restore per SKU with /workspace/negocios/restaurar_por_sku.py (adds the id here and removes it from HIDDEN). */
 export const CERT_ONLY = true;
-export const CERTIFIED = new Set<string>(["2607131033591625600", "2507101438491629200", "1420973530220204032"]);
+export const CERTIFIED = new Set<string>(["2607131033591625600", "2507101438491629200", "1420973530220204032", "pfy-home-tote", "pfy-home-poster-art", "pfy-home-poster-type", "pfy-home-journal", "pfy-home-sticker", "pfy-home-crew-sand-s", "pfy-home-crew-sand-m", "pfy-home-crew-sand-l", "pfy-home-crew-sand-xl", "pfy-home-tee-natural-s", "pfy-home-tee-natural-m", "pfy-home-tee-natural-l", "pfy-home-tee-natural-xl"]);
 
 /* 2026-11-01 owner rule: price under the cheapest comparable Norwegian product (total incl. 79 kr shipping), always with profit. Per CJ variant (vid). */
 export const VARIANT_PRICE: Record<string, number> = {"2607131033591626200": 259, "2607131033591626700": 259, "1423108455966838784": 1419, "1423108456004587520": 1419, "1423108456042336256": 1419, "1423108456075890688": 1419, "1423108456113639424": 1419, "1423108456151388160": 1419, "1423108456205914112": 1419, "1423108456252051456": 1419, "1423108456310771712": 1419, "2507101438491629400": 179, "2507101438491629600": 179, "1420973531604324352": 219, "1420973531616907264": 219, "1420973531625295872": 219};
